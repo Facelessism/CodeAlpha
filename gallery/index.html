@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>My Image Gallery</h1>
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="city">City</button>
+      <button data-filter="friends">Friends</button>
+      <button data-filter="family">Family</button>
+      <button data-filter="notes">Notes</button>
+      <button data-filter="anime">Anime</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <div class="image-card" data-category="anime">
+        <img src="images/anime1.jpg" alt="Anime 1" />
+      </div>
+      <div class="image-card" data-category="anime">
+        <img src="images/anime2.jpg" alt="Anime 2" />
+      </div>
+      
+      <div class="image-card" data-category="city">
+        <img src="images/city1.jpg" alt="City" />
+      </div>
+      
+      <div class="image-card" data-category="family">
+        <img src="images/family1.jpg" alt="Family 1" />
+      </div>
+      <div class="image-card" data-category="family">
+        <img src="images/family2.jpg" alt="Family 2" />
+      </div>
+
+      <div class="image-card" data-category="friends">
+        <img src="images/friends1.jpg" alt="Friends" />
+      </div>
+
+      <div class="image-card" data-category="nature">
+        <img src="images/nature1.jpg" alt="Nature 1" />
+      </div>
+      <div class="image-card" data-category="nature">
+        <img src="images/nature2.jpg" alt="Nature 2" />
+      </div>
+
+      <div class="image-card" data-category="notes">
+        <img src="images/notes1.jpg" alt="Notes 1" />
+      </div>
+      <div class="image-card" data-category="notes">
+        <img src="images/notes2.jpg" alt="Notes 2" />
+      </div>
+    </div>
+  </main>
+
+
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" />
+    <div class="lightbox-nav">
+      <button onclick="prevImage()">⬅️</button>
+      <button onclick="nextImage()">➡️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
