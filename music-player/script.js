@@ -40,6 +40,7 @@ const playlist = [
 let currentIndex = 0;
 
 const audio = document.getElementById('audio');
+const volumeSlider = document.getElementById('volume');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
@@ -50,6 +51,12 @@ const coverImg = document.getElementById('cover-img');
 const progress = document.getElementById('progress');
 const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
+
+audio.volume = volumeSlider.value;
+
+volumeSlider.addEventListener('input', () => {
+  audio.volume = volumeSlider.value;
+});
 
 function loadSong(index) {
   const song = playlist[index];

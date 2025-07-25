@@ -83,23 +83,29 @@ body {
   background: var(--hover-bg);
 }
 
-.progress-container {
+.progress-container
+{
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.8rem;
+  margin-bottom: 12px;
+  width: 100%;
 }
 
-#progress {
+#progress
+{
   flex: 1;
   appearance: none;
-  height: 5px;
+  height: 6px;
   background: var(--accent);
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-#progress::-webkit-slider-thumb {
+#progress::-webkit-slider-thumb
+{
   appearance: none;
   height: 14px;
   width: 14px;
@@ -107,6 +113,59 @@ body {
   background: #fff;
   border: 2px solid var(--accent);
   cursor: pointer;
+}
+
+#progress::-moz-range-thumb
+{
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+#volume {
+  width: 120px;
+  appearance: none;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#volume::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+}
+
+#volume::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+}
+
+.volume-container span {
+  font-size: 1.1rem;
+  color: var(--muted);
 }
 
 footer {
