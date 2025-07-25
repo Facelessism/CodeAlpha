@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Facelessism" />
+  <meta name="description" content="Dark MusickMania - A Music Player featuring ATEEZ & WayV with dynamic UI and audio controls." />
+  <title>Dark MusicMania</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <main class="player-container" role="application" aria-label="Dark MusickMania">
+    
+    <div class="cover">
+      <img 
+        id="cover-img" 
+        src="assets/images/placeholder.jpg" 
+        alt="Song Cover" 
+        aria-label="Current song cover"
+      />
+    </div>
+
+    <div class="song-info">
+      <h2 id="song-title">Loading...</h2>
+      <p id="song-artist">Loading...</p>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <div class="controls" aria-label="Playback controls">
+      <button id="prev" aria-label="Previous track">&#171;</button>
+      <button id="play" aria-label="Play track">&#9654;</button>
+      <button id="next" aria-label="Next track">&#187;</button>
+      <button id="shuffle" aria-label="Shuffle">&#128256;</button>
+    </div>
+
+    <div class="progress-container" aria-label="Song progress bar">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" min="0" max="100" />
+      <span id="duration">0:00</span>
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="credit">2025 &copy; Dark MusickMania Built by <strong>Facelessism</strong></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
