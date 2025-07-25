@@ -2,6 +2,9 @@
  - A responsive calculator built using HTML, CSS & JavaScript.  
  - Supports keyboard input, real-time expression evaluation, and clean UI design.
 
+ ### Preview
+ ![Calculator Preview](preview.png) 
+
 ### Tech Stacks
 - HTML5
 - CSS3 (pure)

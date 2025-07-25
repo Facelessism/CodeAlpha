@@ -1,6 +1,9 @@
 # Image Gallery 
  A responsive image gallery with filtering, hover transitions, and lightbox view using HTML, CSS & JavaScript.
 
+### Preview
+![Gallery Preview](images/preview.png) 
+
 ### Tech Stacks
 - HTML5
 - CSS3 (pure)
